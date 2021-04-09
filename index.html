@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css" integrity="sha512-BAK6UB671tmfzrkeH1CacTvgHQ3aLAFnT2KsigdATsc5X7+3u42tb5vjmAoDiqtxphP5dNZ3cDygivTsGEJhGw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CLOCK</title>
+</head>
+<body>
+    <!-- outer body -->
+    <div class="flex justify-center items-center w-full h-screen bg-gradient-to-t from-indigo-500 via-purple-500 to-blue-300">
+        <!-- clock face -->
+        <div class="relative border-8 rounded-full bg-gradient-to-t from-red-400 via-blue-400 to-green-400 w-56 h-56">
+            <!-- hour hand -->
+            <div class="hour-hand w-24 h-1 bg-gray-700 rounded absolute top-2/4 origin-bottom-right transform rotate-90 transition duration-75 ease-in-out"></div>
+            <!-- min hand -->
+            <div class="min-hand w-24 h-1 bg-gray-700 rounded absolute top-2/4 origin-bottom-right transform rotate-90 transition duration-75 ease-in-out"></div>
+            <!-- sec hand -->
+            <div class="second-hand w-24 h-1 bg-gray-700 rounded absolute top-2/4 origin-bottom-right transform rotate-90 transition duration-75 ease-in-out"></div>
+            <!-- mid circle -->
+            <div class="bg-white rounded-full w-5 h-5 set"></div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
